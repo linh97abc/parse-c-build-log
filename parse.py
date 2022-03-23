@@ -105,6 +105,7 @@ with open("build-import.json", 'w') as f:
         "bsp_compile_flag": bsp_compile_flag,
         "bsp_includes": bsp_includes,
         "bsp_includes": bsp_includes,
+        "list_app": list_app,
         "app_defines": app_defines,
         "app_compile_flag": app_compile_flag,
         "app_includes": app_includes,
