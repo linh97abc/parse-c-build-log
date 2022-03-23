@@ -59,10 +59,10 @@ with open(build_log_file, 'r') as f:
                         is_output_arg = True
                     elif not i.startswith('-'):
                         if is_output_arg:
-                            output_file = i
+                            output_file = i.replace('\n', '')
                             is_output_arg = False
                         else:
-                            compile_file = i
+                            compile_file = i.replace('\n', '')
                     elif not i.startswith('-o'):
                         compile_args.append(i)
                 
